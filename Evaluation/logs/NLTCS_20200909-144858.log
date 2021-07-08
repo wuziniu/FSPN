@@ -1,0 +1,15 @@
+2020-09-09 14:48:59,003 [INFO ]  Loading data completed, start the training process
+2020-09-09 14:48:59,005 [DEBUG]  Current task with data (16181, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:49:01,079 [DEBUG]  calculating pairwise RDC on sample 50000 takes 2.072195053100586 secs
+2020-09-09 14:49:01,081 [DEBUG]  OP: Operation.FACTORIZE on slice (16181, 16) (remaining tasks 0)
+2020-09-09 14:49:01,081 [DEBUG]  Factorize node found the strong connected component[6, 8]
+2020-09-09 14:49:01,081 [DEBUG]  We only factor out [6, 8]
+2020-09-09 14:49:01,083 [DEBUG]  Factorize node factor out weak connected component[0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 14:49:01,085 [DEBUG]  Factorize node found a strongly connect component[6, 8], condition on [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 14:49:01,087 [DEBUG]  Current task with data (16181, 14) scope [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:49:02,750 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.6594879627227783 secs
+2020-09-09 14:49:02,752 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (16181, 14) (remaining tasks 1)
+2020-09-09 14:49:02,942 [DEBUG]  		found 2 row clusters (in 0.18987 secs)
+2020-09-09 14:49:02,942 [DEBUG]  Current task with data (16181, 16) scope [6, 8] and condition [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 14:49:05,145 [DEBUG]  calculating pairwise RDC on sample 50000 takes 2.2010719776153564 secs
+2020-09-09 14:49:05,145 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (16181, 16) (remaining tasks 2)

@@ -1,0 +1,4 @@
+2020-12-17 14:35:22,298 [INFO ]  NumExpr defaulting to 8 threads.
+2020-12-17 14:35:35,017 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 14:35:44,567 [DEBUG]  calculating pairwise RDC on sample 100000 takes 8.934959173202515 secs
+2020-12-17 14:35:44,571 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)

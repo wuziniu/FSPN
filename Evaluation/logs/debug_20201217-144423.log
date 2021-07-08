@@ -1,0 +1,42 @@
+2020-12-17 14:44:25,922 [INFO ]  NumExpr defaulting to 8 threads.
+2020-12-17 14:44:35,133 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 14:44:43,465 [DEBUG]  calculating pairwise RDC on sample 100000 takes 7.746593952178955 secs
+2020-12-17 14:44:43,467 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)
+2020-12-17 14:44:43,953 [DEBUG]  		found 6 col clusters (in 0.48461 secs)
+2020-12-17 14:44:43,954 [DEBUG]  Create an independent component with scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 14:44:43,954 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-12-17 14:44:43,955 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-12-17 14:44:43,957 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-12-17 14:44:43,958 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-12-17 14:44:43,959 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-12-17 14:44:43,960 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 14:44:47,438 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.149812936782837 secs
+2020-12-17 14:44:47,441 [DEBUG]  OP: Operation.FACTORIZE on slice (10000000, 5) (remaining tasks 5)
+2020-12-17 14:44:47,442 [DEBUG]  Factorize node found the strong connected component[0, 1, 5, 6]
+2020-12-17 14:44:47,443 [DEBUG]  We only factor out [0, 1, 5, 6]
+2020-12-17 14:44:47,730 [DEBUG]  Factorize node factor out weak connected component[2]
+2020-12-17 14:44:47,731 [DEBUG]  Factorize node found a strongly connect component[0, 1, 5, 6], condition on [2]
+2020-12-17 14:44:48,008 [DEBUG]  Current task with data (10000000, 1) scope [3] and condition []
+2020-12-17 14:44:48,009 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 6)
+2020-12-17 14:44:49,130 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 1.12095 secs)
+2020-12-17 14:44:49,132 [DEBUG]  Current task with data (10000000, 1) scope [4] and condition []
+2020-12-17 14:44:49,133 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 5)
+2020-12-17 14:44:50,132 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 0.99822 secs)
+2020-12-17 14:44:50,134 [DEBUG]  Current task with data (10000000, 1) scope [7] and condition []
+2020-12-17 14:44:50,135 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 4)
+2020-12-17 14:44:50,773 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.63750 secs)
+2020-12-17 14:44:50,774 [DEBUG]  Current task with data (10000000, 1) scope [8] and condition []
+2020-12-17 14:44:50,774 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 3)
+2020-12-17 14:44:51,421 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.64567 secs)
+2020-12-17 14:44:51,421 [DEBUG]  Current task with data (10000000, 1) scope [9] and condition []
+2020-12-17 14:44:51,422 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 2)
+2020-12-17 14:44:52,066 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.64237 secs)
+2020-12-17 14:44:52,066 [DEBUG]  Current task with data (10000000, 1) scope [2] and condition []
+2020-12-17 14:44:52,067 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 1)
+2020-12-17 14:44:52,721 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.65328 secs)
+2020-12-17 14:44:52,722 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:44:56,180 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.0721330642700195 secs
+2020-12-17 14:44:56,182 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (10000000, 5) (remaining tasks 0)
+2020-12-17 14:44:56,183 [DEBUG]  fanout_location [], condition_location [2], query_attr [2]
+2020-12-17 14:44:56,184 [INFO ]  find optimal attribute: 2
+2020-12-17 14:44:56,895 [INFO ]  find optimal clusters: [{2: [(0.0, 0.0)]}, {2: [(1.0, 85.0)]}]

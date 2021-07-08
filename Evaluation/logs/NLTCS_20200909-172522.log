@@ -1,0 +1,303 @@
+2020-09-09 17:25:22,051 [INFO ]  Loading data completed, start the training process
+2020-09-09 17:25:22,053 [DEBUG]  Current task with data (16181, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:23,807 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.749333143234253 secs
+2020-09-09 17:25:23,809 [DEBUG]  OP: Operation.FACTORIZE on slice (16181, 16) (remaining tasks 0)
+2020-09-09 17:25:23,809 [DEBUG]  Factorize node found the strong connected component[6, 8]
+2020-09-09 17:25:23,809 [DEBUG]  We only factor out [6, 8]
+2020-09-09 17:25:23,811 [DEBUG]  Factorize node factor out weak connected component[0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:23,812 [DEBUG]  Factorize node found a strongly connect component[6, 8], condition on [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:23,814 [DEBUG]  Current task with data (16181, 14) scope [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:25,252 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.4353227615356445 secs
+2020-09-09 17:25:25,253 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (16181, 14) (remaining tasks 1)
+2020-09-09 17:25:25,420 [DEBUG]  		found 2 row clusters (in 0.16683 secs)
+2020-09-09 17:25:25,420 [DEBUG]  Current task with data (16181, 16) scope [6, 8] and condition [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:27,373 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.9509201049804688 secs
+2020-09-09 17:25:27,373 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (16181, 16) (remaining tasks 2)
+2020-09-09 17:25:27,373 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15], query_attr [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:27,374 [INFO ]  find optimal attribute: 4
+2020-09-09 17:25:27,374 [INFO ]  find optimal clusters: [{4: [0]}, {4: [1]}]
+2020-09-09 17:25:27,376 [DEBUG]  		found 2 row clusters (in 0.00304 secs)
+2020-09-09 17:25:27,377 [DEBUG]  Current task with data (6174, 14) scope [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:28,338 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.9601662158966064 secs
+2020-09-09 17:25:28,339 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (6174, 14) (remaining tasks 3)
+2020-09-09 17:25:28,340 [DEBUG]  		found 6 col clusters (in 0.00057 secs)
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [0, 1, 2, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [5] and condition []
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-09-09 17:25:28,340 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 17:25:28,341 [DEBUG]  Current task with data (10007, 14) scope [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:29,635 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.2927649021148682 secs
+2020-09-09 17:25:29,636 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10007, 14) (remaining tasks 8)
+2020-09-09 17:25:29,638 [DEBUG]  		found 10 col clusters (in 0.00135 secs)
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [0] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [2] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [3, 5, 9] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [4, 13, 14] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 17:25:29,638 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 17:25:29,639 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 17:25:29,639 [DEBUG]  Current task with data (7176, 16) scope [6, 8] and condition [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:29,640 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (7176, 16) (remaining tasks 17)
+2020-09-09 17:25:29,640 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:29,640 [DEBUG]  Current task with data (9005, 16) scope [6, 8] and condition [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:29,642 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (9005, 16) (remaining tasks 17)
+2020-09-09 17:25:29,642 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:29,642 [DEBUG]  Current task with data (6174, 9) scope [0, 1, 2, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:30,083 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.4406239986419678 secs
+2020-09-09 17:25:30,084 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (6174, 9) (remaining tasks 17)
+2020-09-09 17:25:30,166 [DEBUG]  		found 2 row clusters (in 0.08242 secs)
+2020-09-09 17:25:30,167 [DEBUG]  Current task with data (6174, 1) scope [3] and condition []
+2020-09-09 17:25:30,167 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6174, 1) (remaining tasks 18)
+2020-09-09 17:25:30,167 [DEBUG]  		 created leaf Binary for scope=[3] and condition=[] (in 0.00033 secs)
+2020-09-09 17:25:30,168 [DEBUG]  Current task with data (6174, 1) scope [4] and condition []
+2020-09-09 17:25:30,168 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6174, 1) (remaining tasks 17)
+2020-09-09 17:25:30,168 [DEBUG]  		 created leaf Binary for scope=[4] and condition=[] (in 0.00024 secs)
+2020-09-09 17:25:30,168 [DEBUG]  Current task with data (6174, 1) scope [5] and condition []
+2020-09-09 17:25:30,168 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6174, 1) (remaining tasks 16)
+2020-09-09 17:25:30,169 [DEBUG]  		 created leaf Binary for scope=[5] and condition=[] (in 0.00022 secs)
+2020-09-09 17:25:30,169 [DEBUG]  Current task with data (6174, 1) scope [7] and condition []
+2020-09-09 17:25:30,169 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6174, 1) (remaining tasks 15)
+2020-09-09 17:25:30,169 [DEBUG]  		 created leaf Binary for scope=[7] and condition=[] (in 0.00023 secs)
+2020-09-09 17:25:30,169 [DEBUG]  Current task with data (6174, 1) scope [9] and condition []
+2020-09-09 17:25:30,170 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6174, 1) (remaining tasks 14)
+2020-09-09 17:25:30,170 [DEBUG]  		 created leaf Binary for scope=[9] and condition=[] (in 0.00022 secs)
+2020-09-09 17:25:30,170 [DEBUG]  Current task with data (10007, 1) scope [0] and condition []
+2020-09-09 17:25:30,170 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 13)
+2020-09-09 17:25:30,171 [DEBUG]  		 created leaf Binary for scope=[0] and condition=[] (in 0.00024 secs)
+2020-09-09 17:25:30,171 [DEBUG]  Current task with data (10007, 1) scope [1] and condition []
+2020-09-09 17:25:30,171 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 12)
+2020-09-09 17:25:30,171 [DEBUG]  		 created leaf Binary for scope=[1] and condition=[] (in 0.00035 secs)
+2020-09-09 17:25:30,172 [DEBUG]  Current task with data (10007, 1) scope [2] and condition []
+2020-09-09 17:25:30,172 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 11)
+2020-09-09 17:25:30,172 [DEBUG]  		 created leaf Binary for scope=[2] and condition=[] (in 0.00026 secs)
+2020-09-09 17:25:30,172 [DEBUG]  Current task with data (10007, 3) scope [3, 5, 9] and condition []
+2020-09-09 17:25:30,293 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.12007284164428711 secs
+2020-09-09 17:25:30,293 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10007, 3) (remaining tasks 10)
+2020-09-09 17:25:30,341 [DEBUG]  		found 2 row clusters (in 0.04772 secs)
+2020-09-09 17:25:30,342 [DEBUG]  Current task with data (10007, 3) scope [4, 13, 14] and condition []
+2020-09-09 17:25:30,457 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11460399627685547 secs
+2020-09-09 17:25:30,457 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10007, 3) (remaining tasks 11)
+2020-09-09 17:25:30,508 [DEBUG]  		found 2 row clusters (in 0.05035 secs)
+2020-09-09 17:25:30,508 [DEBUG]  Current task with data (10007, 1) scope [7] and condition []
+2020-09-09 17:25:30,508 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 12)
+2020-09-09 17:25:30,508 [DEBUG]  		 created leaf Binary for scope=[7] and condition=[] (in 0.00030 secs)
+2020-09-09 17:25:30,509 [DEBUG]  Current task with data (10007, 1) scope [10] and condition []
+2020-09-09 17:25:30,509 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 11)
+2020-09-09 17:25:30,509 [DEBUG]  		 created leaf Binary for scope=[10] and condition=[] (in 0.00026 secs)
+2020-09-09 17:25:30,509 [DEBUG]  Current task with data (10007, 1) scope [11] and condition []
+2020-09-09 17:25:30,509 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 10)
+2020-09-09 17:25:30,510 [DEBUG]  		 created leaf Binary for scope=[11] and condition=[] (in 0.00024 secs)
+2020-09-09 17:25:30,510 [DEBUG]  Current task with data (10007, 1) scope [12] and condition []
+2020-09-09 17:25:30,510 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 9)
+2020-09-09 17:25:30,510 [DEBUG]  		 created leaf Binary for scope=[12] and condition=[] (in 0.00024 secs)
+2020-09-09 17:25:30,511 [DEBUG]  Current task with data (10007, 1) scope [15] and condition []
+2020-09-09 17:25:30,511 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10007, 1) (remaining tasks 8)
+2020-09-09 17:25:30,511 [DEBUG]  		 created leaf Binary for scope=[15] and condition=[] (in 0.00024 secs)
+2020-09-09 17:25:30,511 [DEBUG]  Current task with data (7176, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:31,689 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.1759848594665527 secs
+2020-09-09 17:25:31,689 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (7176, 15) (remaining tasks 7)
+2020-09-09 17:25:31,689 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14], query_attr [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14]
+2020-09-09 17:25:31,689 [INFO ]  find optimal attribute: 3
+2020-09-09 17:25:31,690 [INFO ]  find optimal clusters: [{3: [0]}, {3: [1]}]
+2020-09-09 17:25:31,691 [DEBUG]  		found 2 row clusters (in 0.00220 secs)
+2020-09-09 17:25:31,692 [DEBUG]  Current task with data (9005, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:33,087 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.3938109874725342 secs
+2020-09-09 17:25:33,088 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (9005, 15) (remaining tasks 8)
+2020-09-09 17:25:33,088 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14], query_attr [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14]
+2020-09-09 17:25:33,088 [INFO ]  find optimal attribute: 13
+2020-09-09 17:25:33,089 [INFO ]  find optimal clusters: [{13: [0]}, {13: [1]}]
+2020-09-09 17:25:33,090 [DEBUG]  		found 2 row clusters (in 0.00235 secs)
+2020-09-09 17:25:33,091 [DEBUG]  Current task with data (2474, 9) scope [0, 1, 2, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:33,411 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.3194148540496826 secs
+2020-09-09 17:25:33,411 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2474, 9) (remaining tasks 9)
+2020-09-09 17:25:33,412 [DEBUG]  		found 7 col clusters (in 0.00031 secs)
+2020-09-09 17:25:33,412 [DEBUG]  Create an independent component with scope [0, 2] and condition []
+2020-09-09 17:25:33,412 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 17:25:33,412 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 17:25:33,412 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 17:25:33,412 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 17:25:33,413 [DEBUG]  Create an independent component with scope [13, 14] and condition []
+2020-09-09 17:25:33,413 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 17:25:33,413 [DEBUG]  Current task with data (3700, 9) scope [0, 1, 2, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 17:25:33,848 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.43407678604125977 secs
+2020-09-09 17:25:33,848 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (3700, 9) (remaining tasks 15)
+2020-09-09 17:25:33,850 [DEBUG]  		found 6 col clusters (in 0.00033 secs)
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [0, 2, 13, 14] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 17:25:33,850 [DEBUG]  Current task with data (2929, 3) scope [3, 5, 9] and condition []
+2020-09-09 17:25:33,957 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10590481758117676 secs
+2020-09-09 17:25:33,957 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2929, 3) (remaining tasks 20)
+2020-09-09 17:25:33,958 [DEBUG]  		found 2 col clusters (in 0.00014 secs)
+2020-09-09 17:25:33,958 [DEBUG]  Create an independent component with scope [3, 5] and condition []
+2020-09-09 17:25:33,958 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 17:25:33,958 [DEBUG]  Current task with data (7078, 3) scope [3, 5, 9] and condition []
+2020-09-09 17:25:34,074 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11519503593444824 secs
+2020-09-09 17:25:34,075 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (7078, 3) (remaining tasks 21)
+2020-09-09 17:25:34,075 [DEBUG]  		found 3 col clusters (in 0.00017 secs)
+2020-09-09 17:25:34,075 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-09-09 17:25:34,075 [DEBUG]  Create an independent component with scope [5] and condition []
+2020-09-09 17:25:34,075 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 17:25:34,075 [DEBUG]  Current task with data (6618, 3) scope [4, 13, 14] and condition []
+2020-09-09 17:25:34,076 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (6618, 3) (remaining tasks 23)
+2020-09-09 17:25:34,076 [DEBUG]  find uninformative scope 4
+2020-09-09 17:25:34,076 [DEBUG]  The rest scope [13, 14] and condition [] keep
+2020-09-09 17:25:34,077 [DEBUG]  Current task with data (3389, 3) scope [4, 13, 14] and condition []
+2020-09-09 17:25:34,077 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (3389, 3) (remaining tasks 24)
+2020-09-09 17:25:34,077 [DEBUG]  find uninformative scope 4
+2020-09-09 17:25:34,078 [DEBUG]  The rest scope [13, 14] and condition [] keep
+2020-09-09 17:25:34,078 [DEBUG]  Current task with data (5464, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,079 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (5464, 15) (remaining tasks 25)
+2020-09-09 17:25:34,079 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,080 [DEBUG]  Current task with data (1712, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,080 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1712, 15) (remaining tasks 25)
+2020-09-09 17:25:34,080 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,081 [DEBUG]  Current task with data (2956, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,081 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2956, 15) (remaining tasks 25)
+2020-09-09 17:25:34,081 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15]
+2020-09-09 17:25:34,081 [DEBUG]  Current task with data (6049, 15) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:34,083 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (6049, 15) (remaining tasks 25)
+2020-09-09 17:25:34,083 [DEBUG]  find uninformation condition, keeping only condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15]
+2020-09-09 17:25:34,083 [DEBUG]  Current task with data (2474, 2) scope [0, 2] and condition []
+2020-09-09 17:25:34,192 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10899591445922852 secs
+2020-09-09 17:25:34,193 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2474, 2) (remaining tasks 25)
+2020-09-09 17:25:34,216 [DEBUG]  		found 2 row clusters (in 0.02286 secs)
+2020-09-09 17:25:34,216 [DEBUG]  Current task with data (2474, 1) scope [1] and condition []
+2020-09-09 17:25:34,216 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2474, 1) (remaining tasks 26)
+2020-09-09 17:25:34,217 [DEBUG]  		 created leaf Binary for scope=[1] and condition=[] (in 0.00030 secs)
+2020-09-09 17:25:34,217 [DEBUG]  Current task with data (2474, 1) scope [10] and condition []
+2020-09-09 17:25:34,217 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2474, 1) (remaining tasks 25)
+2020-09-09 17:25:34,218 [DEBUG]  		 created leaf Binary for scope=[10] and condition=[] (in 0.00022 secs)
+2020-09-09 17:25:34,218 [DEBUG]  Current task with data (2474, 1) scope [11] and condition []
+2020-09-09 17:25:34,218 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2474, 1) (remaining tasks 24)
+2020-09-09 17:25:34,218 [DEBUG]  		 created leaf Binary for scope=[11] and condition=[] (in 0.00020 secs)
+2020-09-09 17:25:34,218 [DEBUG]  Current task with data (2474, 1) scope [12] and condition []
+2020-09-09 17:25:34,218 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2474, 1) (remaining tasks 23)
+2020-09-09 17:25:34,219 [DEBUG]  		 created leaf Binary for scope=[12] and condition=[] (in 0.00018 secs)
+2020-09-09 17:25:34,219 [DEBUG]  Current task with data (2474, 2) scope [13, 14] and condition []
+2020-09-09 17:25:34,328 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10873603820800781 secs
+2020-09-09 17:25:34,328 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2474, 2) (remaining tasks 22)
+2020-09-09 17:25:34,345 [DEBUG]  		found 2 row clusters (in 0.01636 secs)
+2020-09-09 17:25:34,345 [DEBUG]  Current task with data (2474, 1) scope [15] and condition []
+2020-09-09 17:25:34,345 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2474, 1) (remaining tasks 23)
+2020-09-09 17:25:34,346 [DEBUG]  		 created leaf Binary for scope=[15] and condition=[] (in 0.00059 secs)
+2020-09-09 17:25:34,346 [DEBUG]  Current task with data (3700, 4) scope [0, 2, 13, 14] and condition []
+2020-09-09 17:25:34,456 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10983419418334961 secs
+2020-09-09 17:25:34,457 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (3700, 4) (remaining tasks 22)
+2020-09-09 17:25:34,492 [DEBUG]  		found 2 row clusters (in 0.03515 secs)
+2020-09-09 17:25:34,493 [DEBUG]  Current task with data (3700, 1) scope [1] and condition []
+2020-09-09 17:25:34,493 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3700, 1) (remaining tasks 23)
+2020-09-09 17:25:34,493 [DEBUG]  		 created leaf Binary for scope=[1] and condition=[] (in 0.00027 secs)
+2020-09-09 17:25:34,493 [DEBUG]  Current task with data (3700, 1) scope [10] and condition []
+2020-09-09 17:25:34,493 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3700, 1) (remaining tasks 22)
+2020-09-09 17:25:34,494 [DEBUG]  		 created leaf Binary for scope=[10] and condition=[] (in 0.00021 secs)
+2020-09-09 17:25:34,494 [DEBUG]  Current task with data (3700, 1) scope [11] and condition []
+2020-09-09 17:25:34,494 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3700, 1) (remaining tasks 21)
+2020-09-09 17:25:34,494 [DEBUG]  		 created leaf Binary for scope=[11] and condition=[] (in 0.00019 secs)
+2020-09-09 17:25:34,494 [DEBUG]  Current task with data (3700, 1) scope [12] and condition []
+2020-09-09 17:25:34,494 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3700, 1) (remaining tasks 20)
+2020-09-09 17:25:34,495 [DEBUG]  		 created leaf Binary for scope=[12] and condition=[] (in 0.00019 secs)
+2020-09-09 17:25:34,495 [DEBUG]  Current task with data (3700, 1) scope [15] and condition []
+2020-09-09 17:25:34,495 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3700, 1) (remaining tasks 19)
+2020-09-09 17:25:34,495 [DEBUG]  		 created leaf Binary for scope=[15] and condition=[] (in 0.00021 secs)
+2020-09-09 17:25:34,496 [DEBUG]  Current task with data (2929, 2) scope [3, 5] and condition []
+2020-09-09 17:25:34,604 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10745692253112793 secs
+2020-09-09 17:25:34,604 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2929, 2) (remaining tasks 18)
+2020-09-09 17:25:34,626 [DEBUG]  		found 2 row clusters (in 0.02210 secs)
+2020-09-09 17:25:34,627 [DEBUG]  Current task with data (2929, 1) scope [9] and condition []
+2020-09-09 17:25:34,627 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2929, 1) (remaining tasks 19)
+2020-09-09 17:25:34,627 [DEBUG]  		 created leaf Binary for scope=[9] and condition=[] (in 0.00022 secs)
+2020-09-09 17:25:34,627 [DEBUG]  Current task with data (7078, 1) scope [3] and condition []
+2020-09-09 17:25:34,627 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7078, 1) (remaining tasks 18)
+2020-09-09 17:25:34,628 [DEBUG]  		 created leaf Binary for scope=[3] and condition=[] (in 0.00038 secs)
+2020-09-09 17:25:34,628 [DEBUG]  Current task with data (7078, 1) scope [5] and condition []
+2020-09-09 17:25:34,628 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7078, 1) (remaining tasks 17)
+2020-09-09 17:25:34,629 [DEBUG]  		 created leaf Binary for scope=[5] and condition=[] (in 0.00055 secs)
+2020-09-09 17:25:34,630 [DEBUG]  Current task with data (7078, 1) scope [9] and condition []
+2020-09-09 17:25:34,630 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7078, 1) (remaining tasks 16)
+2020-09-09 17:25:34,630 [DEBUG]  		 created leaf Binary for scope=[9] and condition=[] (in 0.00041 secs)
+2020-09-09 17:25:34,631 [DEBUG]  Current task with data (6618, 1) scope [4] and condition []
+2020-09-09 17:25:34,631 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6618, 1) (remaining tasks 15)
+2020-09-09 17:25:34,631 [DEBUG]  		 created leaf Binary for scope=[4] and condition=[] (in 0.00030 secs)
+2020-09-09 17:25:34,631 [DEBUG]  Current task with data (6618, 2) scope [13, 14] and condition []
+2020-09-09 17:25:34,744 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11218810081481934 secs
+2020-09-09 17:25:34,745 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (6618, 2) (remaining tasks 14)
+2020-09-09 17:25:34,775 [DEBUG]  		found 2 row clusters (in 0.03026 secs)
+2020-09-09 17:25:34,775 [DEBUG]  Current task with data (3389, 1) scope [4] and condition []
+2020-09-09 17:25:34,776 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3389, 1) (remaining tasks 15)
+2020-09-09 17:25:34,776 [DEBUG]  		 created leaf Binary for scope=[4] and condition=[] (in 0.00030 secs)
+2020-09-09 17:25:34,776 [DEBUG]  Current task with data (3389, 2) scope [13, 14] and condition []
+2020-09-09 17:25:34,883 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10647892951965332 secs
+2020-09-09 17:25:34,883 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (3389, 2) (remaining tasks 14)
+2020-09-09 17:25:34,884 [DEBUG]  		found 2 col clusters (in 0.00011 secs)
+2020-09-09 17:25:34,884 [DEBUG]  Create an independent component with scope [13] and condition []
+2020-09-09 17:25:34,884 [DEBUG]  Create an independent component with scope [14] and condition []
+2020-09-09 17:25:34,884 [DEBUG]  Current task with data (5464, 14) scope [6, 8] and condition [0, 1, 2, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:35,948 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.063075065612793 secs
+2020-09-09 17:25:35,948 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (5464, 14) (remaining tasks 15)
+2020-09-09 17:25:35,949 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13], query_attr [0, 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13]
+2020-09-09 17:25:35,949 [INFO ]  find optimal attribute: 9
+2020-09-09 17:25:35,949 [INFO ]  find optimal clusters: [{9: [0]}, {9: [1]}]
+2020-09-09 17:25:35,950 [DEBUG]  		found 2 row clusters (in 0.00148 secs)
+2020-09-09 17:25:35,950 [DEBUG]  Current task with data (1712, 14) scope [6, 8] and condition [0, 1, 2, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 17:25:36,584 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.6332759857177734 secs
+2020-09-09 17:25:36,585 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (1712, 14) (remaining tasks 16)
+2020-09-09 17:25:36,585 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13], query_attr [0, 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13]
+2020-09-09 17:25:36,585 [INFO ]  find optimal attribute: 14
+2020-09-09 17:25:36,585 [INFO ]  find optimal clusters: [{14: [0]}, {14: [1]}]
+2020-09-09 17:25:36,586 [DEBUG]  		found 2 row clusters (in 0.00087 secs)
+2020-09-09 17:25:36,586 [DEBUG]  Current task with data (2956, 14) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15]
+2020-09-09 17:25:37,221 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.6337900161743164 secs
+2020-09-09 17:25:37,221 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (2956, 14) (remaining tasks 17)
+2020-09-09 17:25:37,221 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13], query_attr [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13]
+2020-09-09 17:25:37,221 [INFO ]  find optimal attribute: 14
+2020-09-09 17:25:37,222 [INFO ]  find optimal clusters: [{14: [0]}, {14: [1]}]
+2020-09-09 17:25:37,222 [DEBUG]  		found 2 row clusters (in 0.00139 secs)
+2020-09-09 17:25:37,223 [DEBUG]  Current task with data (6049, 14) scope [6, 8] and condition [0, 1, 2, 3, 5, 7, 9, 10, 11, 12, 14, 15]
+2020-09-09 17:25:38,297 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.072256088256836 secs
+2020-09-09 17:25:38,297 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (6049, 14) (remaining tasks 18)
+2020-09-09 17:25:38,297 [DEBUG]  fanout_location [], condition_location [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13], query_attr [0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13]
+2020-09-09 17:25:38,297 [INFO ]  find optimal attribute: 9
+2020-09-09 17:25:38,298 [INFO ]  find optimal clusters: [{9: [0]}, {9: [1]}]
+2020-09-09 17:25:38,299 [DEBUG]  		found 2 row clusters (in 0.00199 secs)
+2020-09-09 17:25:38,299 [DEBUG]  Current task with data (1475, 2) scope [0, 2] and condition []
+2020-09-09 17:25:38,300 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1475, 2) (remaining tasks 19)
+2020-09-09 17:25:38,300 [DEBUG]  find uninformative scope 0
+2020-09-09 17:25:38,300 [DEBUG]  The rest scope [2] and condition [] keep
+2020-09-09 17:25:38,300 [DEBUG]  Current task with data (999, 2) scope [0, 2] and condition []
+2020-09-09 17:25:38,301 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (999, 2) (remaining tasks 20)
+2020-09-09 17:25:38,301 [DEBUG]  find uninformative scope 0
+2020-09-09 17:25:38,301 [DEBUG]  The rest scope [2] and condition [] keep
+2020-09-09 17:25:38,301 [DEBUG]  Current task with data (189, 2) scope [13, 14] and condition []
+2020-09-09 17:25:38,301 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (189, 2) (remaining tasks 21)
+2020-09-09 17:25:38,301 [DEBUG]  find uninformative scope 13
+2020-09-09 17:25:38,301 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 17:25:38,302 [DEBUG]  Current task with data (2285, 2) scope [13, 14] and condition []
+2020-09-09 17:25:38,302 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2285, 2) (remaining tasks 22)
+2020-09-09 17:25:38,302 [DEBUG]  find uninformative scope 13
+2020-09-09 17:25:38,302 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 17:25:38,302 [DEBUG]  Current task with data (2041, 4) scope [0, 2, 13, 14] and condition []
+2020-09-09 17:25:38,413 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10976696014404297 secs
+2020-09-09 17:25:38,413 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2041, 4) (remaining tasks 23)
+2020-09-09 17:25:38,414 [DEBUG]  		found 3 col clusters (in 0.00016 secs)
+2020-09-09 17:25:38,414 [DEBUG]  Create an independent component with scope [0, 2] and condition []
+2020-09-09 17:25:38,414 [DEBUG]  Create an independent component with scope [13] and condition []
+2020-09-09 17:25:38,414 [DEBUG]  Create an independent component with scope [14] and condition []
+2020-09-09 17:25:38,414 [DEBUG]  Current task with data (1659, 4) scope [0, 2, 13, 14] and condition []
+2020-09-09 17:25:38,415 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1659, 4) (remaining tasks 25)
+2020-09-09 17:25:38,415 [DEBUG]  find uninformative scope 14
+2020-09-09 17:25:38,415 [DEBUG]  The rest scope [0, 2, 13] and condition [] keep
+2020-09-09 17:25:38,415 [DEBUG]  Current task with data (2106, 2) scope [3, 5] and condition []
+2020-09-09 17:25:38,416 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2106, 2) (remaining tasks 26)
+2020-09-09 17:25:38,416 [DEBUG]  find uninformative scope 5
+2020-09-09 17:25:38,416 [DEBUG]  The rest scope [3] and condition [] keep
+2020-09-09 17:25:38,416 [DEBUG]  Current task with data (823, 2) scope [3, 5] and condition []
+2020-09-09 17:25:38,416 [DEBUG]  OP: Operation.CREATE_LEAF on slice (823, 2) (remaining tasks 27)

@@ -1,0 +1,8 @@
+2020-09-09 14:47:38,829 [INFO ]  Loading data completed, start the training process
+2020-09-09 14:47:38,832 [DEBUG]  Current task with data (16181, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:47:40,811 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.9751062393188477 secs
+2020-09-09 14:47:40,813 [DEBUG]  OP: Operation.FACTORIZE on slice (16181, 16) (remaining tasks 0)
+2020-09-09 14:47:40,813 [DEBUG]  Factorize node found the strong connected component[6, 8]
+2020-09-09 14:47:40,813 [DEBUG]  We only factor out [6, 8]
+2020-09-09 14:47:40,815 [DEBUG]  Factorize node factor out weak connected component[0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]
+2020-09-09 14:47:40,817 [DEBUG]  Factorize node found a strongly connect component[6, 8], condition on [0, 1, 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, 14, 15]

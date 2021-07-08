@@ -1,0 +1,423 @@
+2020-09-09 14:45:56,943 [INFO ]  Loading data completed, start the training process
+2020-09-09 14:45:56,946 [DEBUG]  Current task with data (16181, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:45:58,803 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.8534300327301025 secs
+2020-09-09 14:45:58,805 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (16181, 16) (remaining tasks 0)
+2020-09-09 14:45:58,980 [DEBUG]  		found 2 row clusters (in 0.17502 secs)
+2020-09-09 14:45:58,981 [DEBUG]  Current task with data (10729, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:00,680 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.697929859161377 secs
+2020-09-09 14:46:00,681 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10729, 16) (remaining tasks 1)
+2020-09-09 14:46:00,682 [DEBUG]  		found 12 col clusters (in 0.00175 secs)
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [0] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [2] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [3, 5, 9] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [4, 13, 14] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [6] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-09-09 14:46:00,683 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 14:46:00,684 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 14:46:00,684 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 14:46:00,684 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 14:46:00,684 [DEBUG]  Current task with data (5452, 16) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:01,960 [DEBUG]  calculating pairwise RDC on sample 50000 takes 1.274968147277832 secs
+2020-09-09 14:46:01,961 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (5452, 16) (remaining tasks 12)
+2020-09-09 14:46:01,962 [DEBUG]  		found 5 col clusters (in 0.00087 secs)
+2020-09-09 14:46:01,962 [DEBUG]  Create an independent component with scope [0, 1, 2, 6, 7, 8, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:01,962 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-09-09 14:46:01,962 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-09-09 14:46:01,962 [DEBUG]  Create an independent component with scope [5] and condition []
+2020-09-09 14:46:01,962 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 14:46:01,963 [DEBUG]  Current task with data (10729, 1) scope [0] and condition []
+2020-09-09 14:46:01,963 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 16)
+2020-09-09 14:46:01,965 [DEBUG]  		 created leaf Histogram for scope=[0] and condition=[] (in 0.00185 secs)
+2020-09-09 14:46:01,965 [DEBUG]  Current task with data (10729, 1) scope [1] and condition []
+2020-09-09 14:46:01,965 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 15)
+2020-09-09 14:46:01,966 [DEBUG]  		 created leaf Histogram for scope=[1] and condition=[] (in 0.00108 secs)
+2020-09-09 14:46:01,967 [DEBUG]  Current task with data (10729, 1) scope [2] and condition []
+2020-09-09 14:46:01,967 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 14)
+2020-09-09 14:46:01,968 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.00107 secs)
+2020-09-09 14:46:01,968 [DEBUG]  Current task with data (10729, 3) scope [3, 5, 9] and condition []
+2020-09-09 14:46:02,087 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.1188197135925293 secs
+2020-09-09 14:46:02,088 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10729, 3) (remaining tasks 13)
+2020-09-09 14:46:02,136 [DEBUG]  		found 2 row clusters (in 0.04793 secs)
+2020-09-09 14:46:02,136 [DEBUG]  Current task with data (10729, 3) scope [4, 13, 14] and condition []
+2020-09-09 14:46:02,253 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11507987976074219 secs
+2020-09-09 14:46:02,253 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10729, 3) (remaining tasks 14)
+2020-09-09 14:46:02,301 [DEBUG]  		found 2 row clusters (in 0.04743 secs)
+2020-09-09 14:46:02,301 [DEBUG]  Current task with data (10729, 1) scope [6] and condition []
+2020-09-09 14:46:02,301 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 15)
+2020-09-09 14:46:02,302 [DEBUG]  		 created leaf Histogram for scope=[6] and condition=[] (in 0.00095 secs)
+2020-09-09 14:46:02,302 [DEBUG]  Current task with data (10729, 1) scope [7] and condition []
+2020-09-09 14:46:02,302 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 14)
+2020-09-09 14:46:02,304 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00097 secs)
+2020-09-09 14:46:02,304 [DEBUG]  Current task with data (10729, 1) scope [8] and condition []
+2020-09-09 14:46:02,304 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 13)
+2020-09-09 14:46:02,305 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00085 secs)
+2020-09-09 14:46:02,305 [DEBUG]  Current task with data (10729, 1) scope [10] and condition []
+2020-09-09 14:46:02,305 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 12)
+2020-09-09 14:46:02,306 [DEBUG]  		 created leaf Histogram for scope=[10] and condition=[] (in 0.00090 secs)
+2020-09-09 14:46:02,306 [DEBUG]  Current task with data (10729, 1) scope [11] and condition []
+2020-09-09 14:46:02,307 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 11)
+2020-09-09 14:46:02,308 [DEBUG]  		 created leaf Histogram for scope=[11] and condition=[] (in 0.00096 secs)
+2020-09-09 14:46:02,308 [DEBUG]  Current task with data (10729, 1) scope [12] and condition []
+2020-09-09 14:46:02,308 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 10)
+2020-09-09 14:46:02,309 [DEBUG]  		 created leaf Histogram for scope=[12] and condition=[] (in 0.00083 secs)
+2020-09-09 14:46:02,309 [DEBUG]  Current task with data (10729, 1) scope [15] and condition []
+2020-09-09 14:46:02,309 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10729, 1) (remaining tasks 9)
+2020-09-09 14:46:02,311 [DEBUG]  		 created leaf Histogram for scope=[15] and condition=[] (in 0.00113 secs)
+2020-09-09 14:46:02,311 [DEBUG]  Current task with data (5452, 12) scope [0, 1, 2, 6, 7, 8, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:03,063 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.751349925994873 secs
+2020-09-09 14:46:03,064 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (5452, 12) (remaining tasks 8)
+2020-09-09 14:46:03,168 [DEBUG]  		found 2 row clusters (in 0.10447 secs)
+2020-09-09 14:46:03,169 [DEBUG]  Current task with data (5452, 1) scope [3] and condition []
+2020-09-09 14:46:03,169 [DEBUG]  OP: Operation.CREATE_LEAF on slice (5452, 1) (remaining tasks 9)
+2020-09-09 14:46:03,170 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 0.00093 secs)
+2020-09-09 14:46:03,170 [DEBUG]  Current task with data (5452, 1) scope [4] and condition []
+2020-09-09 14:46:03,170 [DEBUG]  OP: Operation.CREATE_LEAF on slice (5452, 1) (remaining tasks 8)
+2020-09-09 14:46:03,171 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 0.00084 secs)
+2020-09-09 14:46:03,172 [DEBUG]  Current task with data (5452, 1) scope [5] and condition []
+2020-09-09 14:46:03,172 [DEBUG]  OP: Operation.CREATE_LEAF on slice (5452, 1) (remaining tasks 7)
+2020-09-09 14:46:03,173 [DEBUG]  		 created leaf Histogram for scope=[5] and condition=[] (in 0.00082 secs)
+2020-09-09 14:46:03,173 [DEBUG]  Current task with data (5452, 1) scope [9] and condition []
+2020-09-09 14:46:03,173 [DEBUG]  OP: Operation.CREATE_LEAF on slice (5452, 1) (remaining tasks 6)
+2020-09-09 14:46:03,174 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.00072 secs)
+2020-09-09 14:46:03,174 [DEBUG]  Current task with data (3545, 3) scope [3, 5, 9] and condition []
+2020-09-09 14:46:03,288 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11312007904052734 secs
+2020-09-09 14:46:03,288 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (3545, 3) (remaining tasks 5)
+2020-09-09 14:46:03,288 [DEBUG]  		found 2 col clusters (in 0.00013 secs)
+2020-09-09 14:46:03,289 [DEBUG]  Create an independent component with scope [3, 5] and condition []
+2020-09-09 14:46:03,289 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 14:46:03,289 [DEBUG]  Current task with data (7184, 3) scope [3, 5, 9] and condition []
+2020-09-09 14:46:03,403 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.11362814903259277 secs
+2020-09-09 14:46:03,404 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (7184, 3) (remaining tasks 6)
+2020-09-09 14:46:03,404 [DEBUG]  		found 3 col clusters (in 0.00017 secs)
+2020-09-09 14:46:03,404 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-09-09 14:46:03,404 [DEBUG]  Create an independent component with scope [5] and condition []
+2020-09-09 14:46:03,404 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-09-09 14:46:03,404 [DEBUG]  Current task with data (6645, 3) scope [4, 13, 14] and condition []
+2020-09-09 14:46:03,405 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (6645, 3) (remaining tasks 8)
+2020-09-09 14:46:03,405 [DEBUG]  find uninformative scope 4
+2020-09-09 14:46:03,405 [DEBUG]  The rest scope [13, 14] and condition [] keep
+2020-09-09 14:46:03,405 [DEBUG]  Current task with data (4084, 3) scope [4, 13, 14] and condition []
+2020-09-09 14:46:03,406 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (4084, 3) (remaining tasks 9)
+2020-09-09 14:46:03,406 [DEBUG]  find uninformative scope 4
+2020-09-09 14:46:03,406 [DEBUG]  The rest scope [13, 14] and condition [] keep
+2020-09-09 14:46:03,406 [DEBUG]  Current task with data (2991, 12) scope [0, 1, 2, 6, 7, 8, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:03,940 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.5324938297271729 secs
+2020-09-09 14:46:03,940 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2991, 12) (remaining tasks 10)
+2020-09-09 14:46:03,942 [DEBUG]  		found 6 col clusters (in 0.00025 secs)
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [0, 2, 6, 7, 8, 13, 14] and condition []
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 14:46:03,942 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 14:46:03,943 [DEBUG]  Current task with data (2461, 12) scope [0, 1, 2, 6, 7, 8, 10, 11, 12, 13, 14, 15] and condition []
+2020-09-09 14:46:04,365 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.4218018054962158 secs
+2020-09-09 14:46:04,366 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2461, 12) (remaining tasks 15)
+2020-09-09 14:46:04,366 [DEBUG]  		found 8 col clusters (in 0.00043 secs)
+2020-09-09 14:46:04,366 [DEBUG]  Create an independent component with scope [0, 2] and condition []
+2020-09-09 14:46:04,366 [DEBUG]  Create an independent component with scope [1] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [6, 7, 8] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [10] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [11] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [12] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [13, 14] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Create an independent component with scope [15] and condition []
+2020-09-09 14:46:04,367 [DEBUG]  Current task with data (3545, 2) scope [3, 5] and condition []
+2020-09-09 14:46:04,476 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10868024826049805 secs
+2020-09-09 14:46:04,477 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (3545, 2) (remaining tasks 22)
+2020-09-09 14:46:04,503 [DEBUG]  		found 2 row clusters (in 0.02584 secs)
+2020-09-09 14:46:04,503 [DEBUG]  Current task with data (3545, 1) scope [9] and condition []
+2020-09-09 14:46:04,504 [DEBUG]  OP: Operation.CREATE_LEAF on slice (3545, 1) (remaining tasks 23)
+2020-09-09 14:46:04,505 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.00119 secs)
+2020-09-09 14:46:04,505 [DEBUG]  Current task with data (7184, 1) scope [3] and condition []
+2020-09-09 14:46:04,505 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7184, 1) (remaining tasks 22)
+2020-09-09 14:46:04,507 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 0.00132 secs)
+2020-09-09 14:46:04,507 [DEBUG]  Current task with data (7184, 1) scope [5] and condition []
+2020-09-09 14:46:04,507 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7184, 1) (remaining tasks 21)
+2020-09-09 14:46:04,508 [DEBUG]  		 created leaf Histogram for scope=[5] and condition=[] (in 0.00074 secs)
+2020-09-09 14:46:04,508 [DEBUG]  Current task with data (7184, 1) scope [9] and condition []
+2020-09-09 14:46:04,508 [DEBUG]  OP: Operation.CREATE_LEAF on slice (7184, 1) (remaining tasks 20)
+2020-09-09 14:46:04,509 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.00081 secs)
+2020-09-09 14:46:04,509 [DEBUG]  Current task with data (6645, 1) scope [4] and condition []
+2020-09-09 14:46:04,509 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6645, 1) (remaining tasks 19)
+2020-09-09 14:46:04,510 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 0.00073 secs)
+2020-09-09 14:46:04,511 [DEBUG]  Current task with data (6645, 2) scope [13, 14] and condition []
+2020-09-09 14:46:04,621 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.1097710132598877 secs
+2020-09-09 14:46:04,621 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (6645, 2) (remaining tasks 18)
+2020-09-09 14:46:04,650 [DEBUG]  		found 2 row clusters (in 0.02889 secs)
+2020-09-09 14:46:04,651 [DEBUG]  Current task with data (4084, 1) scope [4] and condition []
+2020-09-09 14:46:04,651 [DEBUG]  OP: Operation.CREATE_LEAF on slice (4084, 1) (remaining tasks 19)
+2020-09-09 14:46:04,651 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 0.00055 secs)
+2020-09-09 14:46:04,652 [DEBUG]  Current task with data (4084, 2) scope [13, 14] and condition []
+2020-09-09 14:46:04,759 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10738778114318848 secs
+2020-09-09 14:46:04,760 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (4084, 2) (remaining tasks 18)
+2020-09-09 14:46:04,784 [DEBUG]  		found 2 row clusters (in 0.02388 secs)
+2020-09-09 14:46:04,784 [DEBUG]  Current task with data (2991, 7) scope [0, 2, 6, 7, 8, 13, 14] and condition []
+2020-09-09 14:46:05,000 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.21497273445129395 secs
+2020-09-09 14:46:05,000 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2991, 7) (remaining tasks 19)
+2020-09-09 14:46:05,047 [DEBUG]  		found 2 row clusters (in 0.04678 secs)
+2020-09-09 14:46:05,047 [DEBUG]  Current task with data (2991, 1) scope [1] and condition []
+2020-09-09 14:46:05,047 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2991, 1) (remaining tasks 20)
+2020-09-09 14:46:05,048 [DEBUG]  		 created leaf Histogram for scope=[1] and condition=[] (in 0.00077 secs)
+2020-09-09 14:46:05,048 [DEBUG]  Current task with data (2991, 1) scope [10] and condition []
+2020-09-09 14:46:05,049 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2991, 1) (remaining tasks 19)
+2020-09-09 14:46:05,049 [DEBUG]  		 created leaf Histogram for scope=[10] and condition=[] (in 0.00066 secs)
+2020-09-09 14:46:05,050 [DEBUG]  Current task with data (2991, 1) scope [11] and condition []
+2020-09-09 14:46:05,050 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2991, 1) (remaining tasks 18)
+2020-09-09 14:46:05,050 [DEBUG]  		 created leaf Histogram for scope=[11] and condition=[] (in 0.00061 secs)
+2020-09-09 14:46:05,051 [DEBUG]  Current task with data (2991, 1) scope [12] and condition []
+2020-09-09 14:46:05,051 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2991, 1) (remaining tasks 17)
+2020-09-09 14:46:05,051 [DEBUG]  		 created leaf Histogram for scope=[12] and condition=[] (in 0.00060 secs)
+2020-09-09 14:46:05,051 [DEBUG]  Current task with data (2991, 1) scope [15] and condition []
+2020-09-09 14:46:05,052 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2991, 1) (remaining tasks 16)
+2020-09-09 14:46:05,052 [DEBUG]  		 created leaf Histogram for scope=[15] and condition=[] (in 0.00056 secs)
+2020-09-09 14:46:05,052 [DEBUG]  Current task with data (2461, 2) scope [0, 2] and condition []
+2020-09-09 14:46:05,159 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10677313804626465 secs
+2020-09-09 14:46:05,160 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2461, 2) (remaining tasks 15)
+2020-09-09 14:46:05,179 [DEBUG]  		found 2 row clusters (in 0.01957 secs)
+2020-09-09 14:46:05,180 [DEBUG]  Current task with data (2461, 1) scope [1] and condition []
+2020-09-09 14:46:05,180 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2461, 1) (remaining tasks 16)
+2020-09-09 14:46:05,181 [DEBUG]  		 created leaf Histogram for scope=[1] and condition=[] (in 0.00062 secs)
+2020-09-09 14:46:05,181 [DEBUG]  Current task with data (2461, 3) scope [6, 7, 8] and condition []
+2020-09-09 14:46:05,287 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10628890991210938 secs
+2020-09-09 14:46:05,288 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2461, 3) (remaining tasks 15)
+2020-09-09 14:46:05,313 [DEBUG]  		found 2 row clusters (in 0.02541 secs)
+2020-09-09 14:46:05,314 [DEBUG]  Current task with data (2461, 1) scope [10] and condition []
+2020-09-09 14:46:05,314 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2461, 1) (remaining tasks 16)
+2020-09-09 14:46:05,315 [DEBUG]  		 created leaf Histogram for scope=[10] and condition=[] (in 0.00074 secs)
+2020-09-09 14:46:05,315 [DEBUG]  Current task with data (2461, 1) scope [11] and condition []
+2020-09-09 14:46:05,315 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2461, 1) (remaining tasks 15)
+2020-09-09 14:46:05,316 [DEBUG]  		 created leaf Histogram for scope=[11] and condition=[] (in 0.00058 secs)
+2020-09-09 14:46:05,316 [DEBUG]  Current task with data (2461, 1) scope [12] and condition []
+2020-09-09 14:46:05,316 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2461, 1) (remaining tasks 14)
+2020-09-09 14:46:05,317 [DEBUG]  		 created leaf Histogram for scope=[12] and condition=[] (in 0.00057 secs)
+2020-09-09 14:46:05,317 [DEBUG]  Current task with data (2461, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,426 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10895204544067383 secs
+2020-09-09 14:46:05,426 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (2461, 2) (remaining tasks 13)
+2020-09-09 14:46:05,440 [DEBUG]  		found 2 row clusters (in 0.01378 secs)
+2020-09-09 14:46:05,440 [DEBUG]  Current task with data (2461, 1) scope [15] and condition []
+2020-09-09 14:46:05,441 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2461, 1) (remaining tasks 14)
+2020-09-09 14:46:05,441 [DEBUG]  		 created leaf Histogram for scope=[15] and condition=[] (in 0.00046 secs)
+2020-09-09 14:46:05,441 [DEBUG]  Current task with data (2615, 2) scope [3, 5] and condition []
+2020-09-09 14:46:05,441 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2615, 2) (remaining tasks 13)
+2020-09-09 14:46:05,442 [DEBUG]  find uninformative scope 5
+2020-09-09 14:46:05,442 [DEBUG]  The rest scope [3] and condition [] keep
+2020-09-09 14:46:05,442 [DEBUG]  Current task with data (930, 2) scope [3, 5] and condition []
+2020-09-09 14:46:05,442 [DEBUG]  OP: Operation.CREATE_LEAF on slice (930, 2) (remaining tasks 14)
+2020-09-09 14:46:05,442 [INFO ]  Multihistogram of size [2, 2]
+2020-09-09 14:46:05,443 [DEBUG]  		 created leaf Multi_histogram for scope=[3, 5] and condition=[] (in 0.00068 secs)
+2020-09-09 14:46:05,443 [DEBUG]  Current task with data (6469, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,443 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (6469, 2) (remaining tasks 13)
+2020-09-09 14:46:05,443 [DEBUG]  find uninformative scope 13
+2020-09-09 14:46:05,443 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 14:46:05,443 [DEBUG]  Current task with data (176, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,444 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (176, 2) (remaining tasks 14)
+2020-09-09 14:46:05,444 [DEBUG]  find uninformative scope 13
+2020-09-09 14:46:05,444 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 14:46:05,444 [DEBUG]  Current task with data (2254, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,444 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2254, 2) (remaining tasks 15)
+2020-09-09 14:46:05,444 [DEBUG]  find uninformative scope 13
+2020-09-09 14:46:05,444 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 14:46:05,444 [DEBUG]  Current task with data (1830, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,444 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1830, 2) (remaining tasks 16)
+2020-09-09 14:46:05,445 [DEBUG]  find uninformative scope 13
+2020-09-09 14:46:05,445 [DEBUG]  The rest scope [14] and condition [] keep
+2020-09-09 14:46:05,445 [DEBUG]  Current task with data (1303, 7) scope [0, 2, 6, 7, 8, 13, 14] and condition []
+2020-09-09 14:46:05,658 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.21291899681091309 secs
+2020-09-09 14:46:05,658 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (1303, 7) (remaining tasks 17)
+2020-09-09 14:46:05,659 [DEBUG]  		found 7 col clusters (in 0.00020 secs)
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [0] and condition []
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [2] and condition []
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [6] and condition []
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-09-09 14:46:05,659 [DEBUG]  Create an independent component with scope [13] and condition []
+2020-09-09 14:46:05,660 [DEBUG]  Create an independent component with scope [14] and condition []
+2020-09-09 14:46:05,660 [DEBUG]  Current task with data (1688, 7) scope [0, 2, 6, 7, 8, 13, 14] and condition []
+2020-09-09 14:46:05,874 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.21376800537109375 secs
+2020-09-09 14:46:05,875 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (1688, 7) (remaining tasks 23)
+2020-09-09 14:46:05,875 [DEBUG]  		found 6 col clusters (in 0.00021 secs)
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [0] and condition []
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [2] and condition []
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [6] and condition []
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [7, 8] and condition []
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [13] and condition []
+2020-09-09 14:46:05,875 [DEBUG]  Create an independent component with scope [14] and condition []
+2020-09-09 14:46:05,876 [DEBUG]  Current task with data (1032, 2) scope [0, 2] and condition []
+2020-09-09 14:46:05,876 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1032, 2) (remaining tasks 28)
+2020-09-09 14:46:05,876 [DEBUG]  find uninformative scope 0
+2020-09-09 14:46:05,876 [DEBUG]  The rest scope [2] and condition [] keep
+2020-09-09 14:46:05,876 [DEBUG]  Current task with data (1429, 2) scope [0, 2] and condition []
+2020-09-09 14:46:05,877 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1429, 2) (remaining tasks 29)
+2020-09-09 14:46:05,877 [DEBUG]  find uninformative scope 0
+2020-09-09 14:46:05,877 [DEBUG]  The rest scope [2] and condition [] keep
+2020-09-09 14:46:05,877 [DEBUG]  Current task with data (2226, 3) scope [6, 7, 8] and condition []
+2020-09-09 14:46:05,877 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2226, 3) (remaining tasks 30)
+2020-09-09 14:46:05,878 [DEBUG]  find uninformative scope 8
+2020-09-09 14:46:05,878 [DEBUG]  The rest scope [6, 7] and condition [] keep
+2020-09-09 14:46:05,878 [DEBUG]  Current task with data (235, 3) scope [6, 7, 8] and condition []
+2020-09-09 14:46:05,878 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (235, 3) (remaining tasks 31)
+2020-09-09 14:46:05,878 [DEBUG]  find uninformative scope 8
+2020-09-09 14:46:05,878 [DEBUG]  The rest scope [6, 7] and condition [] keep
+2020-09-09 14:46:05,878 [DEBUG]  Current task with data (2239, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,879 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (2239, 2) (remaining tasks 32)
+2020-09-09 14:46:05,879 [DEBUG]  find uninformative scope 14
+2020-09-09 14:46:05,879 [DEBUG]  The rest scope [13] and condition [] keep
+2020-09-09 14:46:05,879 [DEBUG]  Current task with data (222, 2) scope [13, 14] and condition []
+2020-09-09 14:46:05,880 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (222, 2) (remaining tasks 33)
+2020-09-09 14:46:05,880 [DEBUG]  find uninformative scope 14
+2020-09-09 14:46:05,880 [DEBUG]  The rest scope [13] and condition [] keep
+2020-09-09 14:46:05,880 [DEBUG]  Current task with data (2615, 1) scope [5] and condition []
+2020-09-09 14:46:05,880 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2615, 1) (remaining tasks 34)
+2020-09-09 14:46:05,881 [DEBUG]  		 created leaf Histogram for scope=[5] and condition=[] (in 0.00064 secs)
+2020-09-09 14:46:05,881 [DEBUG]  Current task with data (2615, 1) scope [3] and condition []
+2020-09-09 14:46:05,881 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2615, 1) (remaining tasks 33)
+2020-09-09 14:46:05,882 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 0.00057 secs)
+2020-09-09 14:46:05,882 [DEBUG]  Current task with data (6469, 1) scope [13] and condition []
+2020-09-09 14:46:05,882 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6469, 1) (remaining tasks 32)
+2020-09-09 14:46:05,883 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00066 secs)
+2020-09-09 14:46:05,883 [DEBUG]  Current task with data (6469, 1) scope [14] and condition []
+2020-09-09 14:46:05,883 [DEBUG]  OP: Operation.CREATE_LEAF on slice (6469, 1) (remaining tasks 31)
+2020-09-09 14:46:05,884 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00068 secs)
+2020-09-09 14:46:05,884 [DEBUG]  Current task with data (176, 1) scope [13] and condition []
+2020-09-09 14:46:05,884 [DEBUG]  OP: Operation.CREATE_LEAF on slice (176, 1) (remaining tasks 30)
+2020-09-09 14:46:05,885 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00047 secs)
+2020-09-09 14:46:05,885 [DEBUG]  Current task with data (176, 1) scope [14] and condition []
+2020-09-09 14:46:05,885 [DEBUG]  OP: Operation.CREATE_LEAF on slice (176, 1) (remaining tasks 29)
+2020-09-09 14:46:05,885 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00046 secs)
+2020-09-09 14:46:05,885 [DEBUG]  Current task with data (2254, 1) scope [13] and condition []
+2020-09-09 14:46:05,886 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2254, 1) (remaining tasks 28)
+2020-09-09 14:46:05,886 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00055 secs)
+2020-09-09 14:46:05,886 [DEBUG]  Current task with data (2254, 1) scope [14] and condition []
+2020-09-09 14:46:05,886 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2254, 1) (remaining tasks 27)
+2020-09-09 14:46:05,887 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00053 secs)
+2020-09-09 14:46:05,887 [DEBUG]  Current task with data (1830, 1) scope [13] and condition []
+2020-09-09 14:46:05,887 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1830, 1) (remaining tasks 26)
+2020-09-09 14:46:05,888 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00049 secs)
+2020-09-09 14:46:05,888 [DEBUG]  Current task with data (1830, 1) scope [14] and condition []
+2020-09-09 14:46:05,888 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1830, 1) (remaining tasks 25)
+2020-09-09 14:46:05,889 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00054 secs)
+2020-09-09 14:46:05,889 [DEBUG]  Current task with data (1303, 1) scope [0] and condition []
+2020-09-09 14:46:05,889 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 24)
+2020-09-09 14:46:05,890 [DEBUG]  		 created leaf Histogram for scope=[0] and condition=[] (in 0.00053 secs)
+2020-09-09 14:46:05,890 [DEBUG]  Current task with data (1303, 1) scope [2] and condition []
+2020-09-09 14:46:05,890 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 23)
+2020-09-09 14:46:05,891 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.00050 secs)
+2020-09-09 14:46:05,891 [DEBUG]  Current task with data (1303, 1) scope [6] and condition []
+2020-09-09 14:46:05,891 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 22)
+2020-09-09 14:46:05,892 [DEBUG]  		 created leaf Histogram for scope=[6] and condition=[] (in 0.00053 secs)
+2020-09-09 14:46:05,892 [DEBUG]  Current task with data (1303, 1) scope [7] and condition []
+2020-09-09 14:46:05,892 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 21)
+2020-09-09 14:46:05,892 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00053 secs)
+2020-09-09 14:46:05,893 [DEBUG]  Current task with data (1303, 1) scope [8] and condition []
+2020-09-09 14:46:05,893 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 20)
+2020-09-09 14:46:05,893 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00052 secs)
+2020-09-09 14:46:05,893 [DEBUG]  Current task with data (1303, 1) scope [13] and condition []
+2020-09-09 14:46:05,893 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 19)
+2020-09-09 14:46:05,894 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00055 secs)
+2020-09-09 14:46:05,894 [DEBUG]  Current task with data (1303, 1) scope [14] and condition []
+2020-09-09 14:46:05,895 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1303, 1) (remaining tasks 18)
+2020-09-09 14:46:05,895 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00065 secs)
+2020-09-09 14:46:05,895 [DEBUG]  Current task with data (1688, 1) scope [0] and condition []
+2020-09-09 14:46:05,896 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1688, 1) (remaining tasks 17)
+2020-09-09 14:46:05,896 [DEBUG]  		 created leaf Histogram for scope=[0] and condition=[] (in 0.00061 secs)
+2020-09-09 14:46:05,896 [DEBUG]  Current task with data (1688, 1) scope [2] and condition []
+2020-09-09 14:46:05,897 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1688, 1) (remaining tasks 16)
+2020-09-09 14:46:05,897 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.00061 secs)
+2020-09-09 14:46:05,897 [DEBUG]  Current task with data (1688, 1) scope [6] and condition []
+2020-09-09 14:46:05,898 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1688, 1) (remaining tasks 15)
+2020-09-09 14:46:05,899 [DEBUG]  		 created leaf Histogram for scope=[6] and condition=[] (in 0.00108 secs)
+2020-09-09 14:46:05,899 [DEBUG]  Current task with data (1688, 2) scope [7, 8] and condition []
+2020-09-09 14:46:06,007 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10816788673400879 secs
+2020-09-09 14:46:06,008 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (1688, 2) (remaining tasks 14)
+2020-09-09 14:46:06,022 [DEBUG]  		found 2 row clusters (in 0.01381 secs)
+2020-09-09 14:46:06,022 [DEBUG]  Current task with data (1688, 1) scope [13] and condition []
+2020-09-09 14:46:06,022 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1688, 1) (remaining tasks 15)
+2020-09-09 14:46:06,023 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00045 secs)
+2020-09-09 14:46:06,023 [DEBUG]  Current task with data (1688, 1) scope [14] and condition []
+2020-09-09 14:46:06,023 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1688, 1) (remaining tasks 14)
+2020-09-09 14:46:06,023 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00045 secs)
+2020-09-09 14:46:06,023 [DEBUG]  Current task with data (1032, 1) scope [0] and condition []
+2020-09-09 14:46:06,024 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1032, 1) (remaining tasks 13)
+2020-09-09 14:46:06,024 [DEBUG]  		 created leaf Histogram for scope=[0] and condition=[] (in 0.00034 secs)
+2020-09-09 14:46:06,024 [DEBUG]  Current task with data (1032, 1) scope [2] and condition []
+2020-09-09 14:46:06,024 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1032, 1) (remaining tasks 12)
+2020-09-09 14:46:06,025 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.00036 secs)
+2020-09-09 14:46:06,025 [DEBUG]  Current task with data (1429, 1) scope [0] and condition []
+2020-09-09 14:46:06,025 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1429, 1) (remaining tasks 11)
+2020-09-09 14:46:06,025 [DEBUG]  		 created leaf Histogram for scope=[0] and condition=[] (in 0.00035 secs)
+2020-09-09 14:46:06,025 [DEBUG]  Current task with data (1429, 1) scope [2] and condition []
+2020-09-09 14:46:06,025 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1429, 1) (remaining tasks 10)
+2020-09-09 14:46:06,026 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.00035 secs)
+2020-09-09 14:46:06,026 [DEBUG]  Current task with data (2226, 1) scope [8] and condition []
+2020-09-09 14:46:06,026 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2226, 1) (remaining tasks 9)
+2020-09-09 14:46:06,026 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00039 secs)
+2020-09-09 14:46:06,027 [DEBUG]  Current task with data (2226, 2) scope [6, 7] and condition []
+2020-09-09 14:46:06,135 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10870099067687988 secs
+2020-09-09 14:46:06,136 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (2226, 2) (remaining tasks 8)
+2020-09-09 14:46:06,136 [DEBUG]  		found 2 col clusters (in 0.00009 secs)
+2020-09-09 14:46:06,136 [DEBUG]  Create an independent component with scope [6] and condition []
+2020-09-09 14:46:06,136 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-09-09 14:46:06,136 [DEBUG]  Current task with data (235, 1) scope [8] and condition []
+2020-09-09 14:46:06,136 [DEBUG]  OP: Operation.CREATE_LEAF on slice (235, 1) (remaining tasks 9)
+2020-09-09 14:46:06,137 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00040 secs)
+2020-09-09 14:46:06,137 [DEBUG]  Current task with data (235, 2) scope [6, 7] and condition []
+2020-09-09 14:46:06,242 [DEBUG]  calculating pairwise RDC on sample 50000 takes 0.10509181022644043 secs
+2020-09-09 14:46:06,243 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (235, 2) (remaining tasks 8)
+2020-09-09 14:46:06,255 [DEBUG]  		found 2 row clusters (in 0.01201 secs)
+2020-09-09 14:46:06,255 [DEBUG]  Current task with data (2239, 1) scope [14] and condition []
+2020-09-09 14:46:06,255 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2239, 1) (remaining tasks 9)
+2020-09-09 14:46:06,256 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00047 secs)
+2020-09-09 14:46:06,256 [DEBUG]  Current task with data (2239, 1) scope [13] and condition []
+2020-09-09 14:46:06,256 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2239, 1) (remaining tasks 8)
+2020-09-09 14:46:06,256 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00041 secs)
+2020-09-09 14:46:06,257 [DEBUG]  Current task with data (222, 1) scope [14] and condition []
+2020-09-09 14:46:06,257 [DEBUG]  OP: Operation.CREATE_LEAF on slice (222, 1) (remaining tasks 7)
+2020-09-09 14:46:06,258 [DEBUG]  		 created leaf Histogram for scope=[14] and condition=[] (in 0.00070 secs)
+2020-09-09 14:46:06,258 [DEBUG]  Current task with data (222, 1) scope [13] and condition []
+2020-09-09 14:46:06,258 [DEBUG]  OP: Operation.CREATE_LEAF on slice (222, 1) (remaining tasks 6)
+2020-09-09 14:46:06,259 [DEBUG]  		 created leaf Histogram for scope=[13] and condition=[] (in 0.00056 secs)
+2020-09-09 14:46:06,259 [DEBUG]  Current task with data (668, 2) scope [7, 8] and condition []
+2020-09-09 14:46:06,259 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (668, 2) (remaining tasks 5)
+2020-09-09 14:46:06,259 [DEBUG]  find uninformative scope 7
+2020-09-09 14:46:06,259 [DEBUG]  The rest scope [8] and condition [] keep
+2020-09-09 14:46:06,259 [DEBUG]  Current task with data (1020, 2) scope [7, 8] and condition []
+2020-09-09 14:46:06,260 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (1020, 2) (remaining tasks 6)
+2020-09-09 14:46:06,260 [DEBUG]  find uninformative scope 7
+2020-09-09 14:46:06,260 [DEBUG]  The rest scope [8] and condition [] keep
+2020-09-09 14:46:06,260 [DEBUG]  Current task with data (2226, 1) scope [6] and condition []
+2020-09-09 14:46:06,260 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2226, 1) (remaining tasks 7)
+2020-09-09 14:46:06,261 [DEBUG]  		 created leaf Histogram for scope=[6] and condition=[] (in 0.00052 secs)
+2020-09-09 14:46:06,261 [DEBUG]  Current task with data (2226, 1) scope [7] and condition []
+2020-09-09 14:46:06,261 [DEBUG]  OP: Operation.CREATE_LEAF on slice (2226, 1) (remaining tasks 6)
+2020-09-09 14:46:06,262 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00043 secs)
+2020-09-09 14:46:06,262 [DEBUG]  Current task with data (176, 2) scope [6, 7] and condition []
+2020-09-09 14:46:06,262 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (176, 2) (remaining tasks 5)
+2020-09-09 14:46:06,262 [DEBUG]  find uninformative scope 7
+2020-09-09 14:46:06,262 [DEBUG]  The rest scope [6] and condition [] keep
+2020-09-09 14:46:06,262 [DEBUG]  Current task with data (59, 2) scope [6, 7] and condition []
+2020-09-09 14:46:06,262 [DEBUG]  OP: Operation.CREATE_LEAF on slice (59, 2) (remaining tasks 6)
+2020-09-09 14:46:06,263 [INFO ]  Multihistogram of size [3, 2]
+2020-09-09 14:46:06,263 [DEBUG]  		 created leaf Multi_histogram for scope=[6, 7] and condition=[] (in 0.00061 secs)
+2020-09-09 14:46:06,263 [DEBUG]  Current task with data (668, 1) scope [7] and condition []
+2020-09-09 14:46:06,263 [DEBUG]  OP: Operation.CREATE_LEAF on slice (668, 1) (remaining tasks 5)
+2020-09-09 14:46:06,264 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00036 secs)
+2020-09-09 14:46:06,264 [DEBUG]  Current task with data (668, 1) scope [8] and condition []
+2020-09-09 14:46:06,264 [DEBUG]  OP: Operation.CREATE_LEAF on slice (668, 1) (remaining tasks 4)
+2020-09-09 14:46:06,264 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00031 secs)
+2020-09-09 14:46:06,264 [DEBUG]  Current task with data (1020, 1) scope [7] and condition []
+2020-09-09 14:46:06,264 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1020, 1) (remaining tasks 3)
+2020-09-09 14:46:06,265 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00037 secs)
+2020-09-09 14:46:06,265 [DEBUG]  Current task with data (1020, 1) scope [8] and condition []
+2020-09-09 14:46:06,265 [DEBUG]  OP: Operation.CREATE_LEAF on slice (1020, 1) (remaining tasks 2)
+2020-09-09 14:46:06,265 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.00033 secs)
+2020-09-09 14:46:06,265 [DEBUG]  Current task with data (176, 1) scope [7] and condition []
+2020-09-09 14:46:06,265 [DEBUG]  OP: Operation.CREATE_LEAF on slice (176, 1) (remaining tasks 1)
+2020-09-09 14:46:06,266 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.00029 secs)
+2020-09-09 14:46:06,266 [DEBUG]  Current task with data (176, 1) scope [6] and condition []
+2020-09-09 14:46:06,266 [DEBUG]  OP: Operation.CREATE_LEAF on slice (176, 1) (remaining tasks 0)
+2020-09-09 14:46:06,266 [DEBUG]  		 created leaf Histogram for scope=[6] and condition=[] (in 0.00030 secs)
+2020-09-09 14:46:06,269 [INFO ]  FSPN training complete, takes 9.324519157409668 seconds

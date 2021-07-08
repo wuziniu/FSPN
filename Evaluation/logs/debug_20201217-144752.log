@@ -1,0 +1,172 @@
+2020-12-17 14:47:55,158 [INFO ]  NumExpr defaulting to 8 threads.
+2020-12-17 14:48:04,486 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 14:48:13,002 [DEBUG]  calculating pairwise RDC on sample 100000 takes 7.936563014984131 secs
+2020-12-17 14:48:13,005 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)
+2020-12-17 14:48:13,519 [DEBUG]  		found 6 col clusters (in 0.51239 secs)
+2020-12-17 14:48:13,520 [DEBUG]  Create an independent component with scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 14:48:13,521 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-12-17 14:48:13,522 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-12-17 14:48:13,522 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-12-17 14:48:13,524 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-12-17 14:48:13,525 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-12-17 14:48:13,526 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 14:48:17,061 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.2195241451263428 secs
+2020-12-17 14:48:17,063 [DEBUG]  OP: Operation.FACTORIZE on slice (10000000, 5) (remaining tasks 5)
+2020-12-17 14:48:17,064 [DEBUG]  Factorize node found the strong connected component[0, 1, 5, 6]
+2020-12-17 14:48:17,065 [DEBUG]  We only factor out [0, 1, 5, 6]
+2020-12-17 14:48:17,315 [DEBUG]  Factorize node factor out weak connected component[2]
+2020-12-17 14:48:17,316 [DEBUG]  Factorize node found a strongly connect component[0, 1, 5, 6], condition on [2]
+2020-12-17 14:48:17,608 [DEBUG]  Current task with data (10000000, 1) scope [3] and condition []
+2020-12-17 14:48:17,609 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 6)
+2020-12-17 14:48:18,787 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 1.17787 secs)
+2020-12-17 14:48:18,788 [DEBUG]  Current task with data (10000000, 1) scope [4] and condition []
+2020-12-17 14:48:18,789 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 5)
+2020-12-17 14:48:19,844 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 1.05495 secs)
+2020-12-17 14:48:19,845 [DEBUG]  Current task with data (10000000, 1) scope [7] and condition []
+2020-12-17 14:48:19,846 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 4)
+2020-12-17 14:48:20,520 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.67190 secs)
+2020-12-17 14:48:20,520 [DEBUG]  Current task with data (10000000, 1) scope [8] and condition []
+2020-12-17 14:48:20,521 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 3)
+2020-12-17 14:48:21,235 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.71325 secs)
+2020-12-17 14:48:21,236 [DEBUG]  Current task with data (10000000, 1) scope [9] and condition []
+2020-12-17 14:48:21,236 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 2)
+2020-12-17 14:48:21,916 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.67929 secs)
+2020-12-17 14:48:21,917 [DEBUG]  Current task with data (10000000, 1) scope [2] and condition []
+2020-12-17 14:48:21,918 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 1)
+2020-12-17 14:48:22,589 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.66973 secs)
+2020-12-17 14:48:22,590 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:48:26,183 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.2034192085266113 secs
+2020-12-17 14:48:26,185 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (10000000, 5) (remaining tasks 0)
+2020-12-17 14:48:26,186 [DEBUG]  fanout_location [], condition_location [2], query_attr [2]
+2020-12-17 14:48:26,188 [INFO ]  find optimal attribute: 2
+2020-12-17 14:48:26,888 [INFO ]  find optimal clusters: [{2: [(0.0, 0.0)]}, {2: [(1.0, 85.0)]}]
+2020-12-17 14:48:27,675 [DEBUG]  		found 2 row clusters (in 1.48855 secs)
+2020-12-17 14:48:27,711 [DEBUG]  Current task with data (9823106, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:48:28,477 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (9823106, 5) (remaining tasks 1)
+2020-12-17 14:48:28,478 [DEBUG]  find uninformation condition, keeping only condition []
+2020-12-17 14:48:28,478 [DEBUG]  The rest scope [0, 1, 5, 6] and condition [] keep
+2020-12-17 14:48:28,713 [DEBUG]  Current task with data (176894, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:48:32,378 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.6569738388061523 secs
+2020-12-17 14:48:32,379 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (176894, 5) (remaining tasks 1)
+2020-12-17 14:48:32,380 [DEBUG]  fanout_location [], condition_location [2], query_attr [2]
+2020-12-17 14:48:32,381 [INFO ]  find optimal attribute: 2
+2020-12-17 14:48:32,409 [INFO ]  find optimal clusters: [{2: [(1.0, 2.0)]}, {2: [(3.0, 85.0)]}]
+2020-12-17 14:48:32,470 [DEBUG]  		found 2 row clusters (in 0.08990 secs)
+2020-12-17 14:48:32,471 [DEBUG]  Current task with data (9823106, 4) scope [0, 1, 5, 6] and condition []
+2020-12-17 14:48:32,473 [DEBUG]  OP: Operation.CREATE_LEAF on slice (9823106, 4) (remaining tasks 2)
+2020-12-17 14:48:34,900 [INFO ]  Multihistogram of size [5, 76, 60, 10]
+2020-12-17 14:48:36,183 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[] (in 3.70828 secs)
+2020-12-17 14:48:36,204 [DEBUG]  Current task with data (83238, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:48:38,986 [DEBUG]  calculating pairwise RDC on sample 100000 takes 2.7770540714263916 secs
+2020-12-17 14:48:38,988 [DEBUG]  OP: Operation.CREATE_LEAF on slice (83238, 5) (remaining tasks 1)
+2020-12-17 14:48:39,017 [INFO ]  Multihistogram of size [5, 41, 47, 10]
+2020-12-17 14:48:39,040 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[2] (in 0.05139 secs)
+2020-12-17 14:48:39,042 [DEBUG]  Current task with data (93656, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 14:48:42,312 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.2602970600128174 secs
+2020-12-17 14:48:42,314 [DEBUG]  OP: Operation.CREATE_LEAF on slice (93656, 5) (remaining tasks 0)
+2020-12-17 14:48:42,358 [INFO ]  Multihistogram of size [5, 49, 54, 10]
+2020-12-17 14:48:42,391 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[2] (in 0.07592 secs)
+2020-12-17 16:03:18,808 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 16:03:26,639 [DEBUG]  calculating pairwise RDC on sample 100000 takes 7.265963077545166 secs
+2020-12-17 16:03:26,641 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)
+2020-12-17 16:03:27,144 [DEBUG]  		found 6 col clusters (in 0.50118 secs)
+2020-12-17 16:03:27,144 [DEBUG]  Create an independent component with scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 16:03:27,145 [DEBUG]  Create an independent component with scope [3] and condition []
+2020-12-17 16:03:27,146 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-12-17 16:03:27,147 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-12-17 16:03:27,148 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-12-17 16:03:27,150 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-12-17 16:03:27,151 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 2, 5, 6] and condition []
+2020-12-17 16:03:30,405 [DEBUG]  calculating pairwise RDC on sample 100000 takes 2.9460790157318115 secs
+2020-12-17 16:03:30,406 [DEBUG]  OP: Operation.FACTORIZE on slice (10000000, 5) (remaining tasks 5)
+2020-12-17 16:03:30,407 [DEBUG]  Factorize node found the strong connected component[0, 1, 5, 6]
+2020-12-17 16:03:30,408 [DEBUG]  We only factor out [0, 1, 5, 6]
+2020-12-17 16:03:30,665 [DEBUG]  Factorize node factor out weak connected component[2]
+2020-12-17 16:03:30,666 [DEBUG]  Factorize node found a strongly connect component[0, 1, 5, 6], condition on [2]
+2020-12-17 16:03:30,948 [DEBUG]  Current task with data (10000000, 1) scope [3] and condition []
+2020-12-17 16:03:30,949 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 6)
+2020-12-17 16:03:32,092 [DEBUG]  		 created leaf Histogram for scope=[3] and condition=[] (in 1.14185 secs)
+2020-12-17 16:03:32,092 [DEBUG]  Current task with data (10000000, 1) scope [4] and condition []
+2020-12-17 16:03:32,093 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 5)
+2020-12-17 16:03:33,085 [DEBUG]  		 created leaf Histogram for scope=[4] and condition=[] (in 0.99182 secs)
+2020-12-17 16:03:33,087 [DEBUG]  Current task with data (10000000, 1) scope [7] and condition []
+2020-12-17 16:03:33,088 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 4)
+2020-12-17 16:03:33,738 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.64937 secs)
+2020-12-17 16:03:33,739 [DEBUG]  Current task with data (10000000, 1) scope [8] and condition []
+2020-12-17 16:03:33,739 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 3)
+2020-12-17 16:03:34,413 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.67310 secs)
+2020-12-17 16:03:34,414 [DEBUG]  Current task with data (10000000, 1) scope [9] and condition []
+2020-12-17 16:03:34,415 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 2)
+2020-12-17 16:03:35,061 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.64530 secs)
+2020-12-17 16:03:35,061 [DEBUG]  Current task with data (10000000, 1) scope [2] and condition []
+2020-12-17 16:03:35,062 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 1)
+2020-12-17 16:03:35,708 [DEBUG]  		 created leaf Histogram for scope=[2] and condition=[] (in 0.64533 secs)
+2020-12-17 16:03:35,709 [DEBUG]  Current task with data (10000000, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 16:03:39,088 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.0627689361572266 secs
+2020-12-17 16:03:39,089 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (10000000, 5) (remaining tasks 0)
+2020-12-17 16:03:39,090 [DEBUG]  fanout_location [], condition_location [2], query_attr [2]
+2020-12-17 16:03:39,091 [INFO ]  find optimal attribute: 2
+2020-12-17 16:03:39,782 [INFO ]  find optimal clusters: [{2: [(0.0, 0.0)]}, {2: [(1.0, 85.0)]}]
+2020-12-17 16:03:40,615 [DEBUG]  		found 2 row clusters (in 1.52495 secs)
+2020-12-17 16:03:40,648 [DEBUG]  Current task with data (9823543, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 16:03:41,263 [DEBUG]  OP: Operation.REMOVE_UNINFORMATIVE_FEATURES on slice (9823543, 5) (remaining tasks 1)
+2020-12-17 16:03:41,264 [DEBUG]  find uninformation condition, keeping only condition []
+2020-12-17 16:03:41,265 [DEBUG]  The rest scope [0, 1, 5, 6] and condition [] keep
+2020-12-17 16:03:41,506 [DEBUG]  Current task with data (176457, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 16:03:44,796 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.2804207801818848 secs
+2020-12-17 16:03:44,797 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (176457, 5) (remaining tasks 1)
+2020-12-17 16:03:44,798 [DEBUG]  fanout_location [], condition_location [2], query_attr [2]
+2020-12-17 16:03:44,799 [INFO ]  find optimal attribute: 2
+2020-12-17 16:03:44,826 [INFO ]  find optimal clusters: [{2: [(1.0, 2.0)]}, {2: [(3.0, 85.0)]}]
+2020-12-17 16:03:44,886 [DEBUG]  		found 2 row clusters (in 0.08777 secs)
+2020-12-17 16:03:44,888 [DEBUG]  Current task with data (9823543, 4) scope [0, 1, 5, 6] and condition []
+2020-12-17 16:03:44,889 [DEBUG]  OP: Operation.CREATE_LEAF on slice (9823543, 4) (remaining tasks 2)
+2020-12-17 16:03:47,336 [INFO ]  Multihistogram of size [5, 76, 60, 10]
+2020-12-17 16:03:48,594 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[] (in 3.70352 secs)
+2020-12-17 16:03:48,614 [DEBUG]  Current task with data (83196, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 16:03:51,919 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.2989699840545654 secs
+2020-12-17 16:03:51,921 [DEBUG]  OP: Operation.CREATE_LEAF on slice (83196, 5) (remaining tasks 1)
+2020-12-17 16:03:51,949 [INFO ]  Multihistogram of size [5, 41, 46, 10]
+2020-12-17 16:03:51,969 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[2] (in 0.04687 secs)
+2020-12-17 16:03:51,970 [DEBUG]  Current task with data (93261, 5) scope [0, 1, 5, 6] and condition [2]
+2020-12-17 16:03:56,725 [DEBUG]  calculating pairwise RDC on sample 100000 takes 4.746345043182373 secs
+2020-12-17 16:03:56,727 [DEBUG]  OP: Operation.CREATE_LEAF on slice (93261, 5) (remaining tasks 0)
+2020-12-17 16:03:56,770 [INFO ]  Multihistogram of size [5, 49, 54, 10]
+2020-12-17 16:03:56,805 [DEBUG]  		 created leaf Multi_histogram for scope=[0, 1, 5, 6] and condition=[2] (in 0.07649 secs)
+2020-12-17 16:13:26,514 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 16:13:34,602 [DEBUG]  calculating pairwise RDC on sample 100000 takes 7.510886192321777 secs
+2020-12-17 16:13:34,605 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)
+2020-12-17 16:13:35,112 [DEBUG]  		found 4 col clusters (in 0.50540 secs)
+2020-12-17 16:13:35,112 [DEBUG]  Create an independent component with scope [0, 1, 2, 3, 4, 5, 6] and condition []
+2020-12-17 16:13:35,113 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-12-17 16:13:35,114 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-12-17 16:13:35,115 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-12-17 16:13:35,116 [DEBUG]  Current task with data (10000000, 7) scope [0, 1, 2, 3, 4, 5, 6] and condition []
+2020-12-17 16:13:41,430 [DEBUG]  calculating pairwise RDC on sample 100000 takes 5.858595848083496 secs
+2020-12-17 16:13:41,431 [DEBUG]  OP: Operation.FACTORIZE on slice (10000000, 7) (remaining tasks 3)
+2020-12-17 16:13:41,432 [DEBUG]  Factorize node found the strong connected component[0, 1, 5, 6]
+2020-12-17 16:13:41,433 [DEBUG]  We only factor out [0, 1, 5, 6]
+2020-12-17 16:13:41,811 [DEBUG]  Factorize node factor out weak connected component[2, 3, 4]
+2020-12-17 16:13:41,949 [DEBUG]  Factorize node found a strongly connect component[0, 1, 5, 6], condition on [2, 3, 4]
+2020-12-17 16:13:42,416 [DEBUG]  Current task with data (10000000, 1) scope [7] and condition []
+2020-12-17 16:13:42,417 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 4)
+2020-12-17 16:13:43,175 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.75645 secs)
+2020-12-17 16:13:43,175 [DEBUG]  Current task with data (10000000, 1) scope [8] and condition []
+2020-12-17 16:13:43,177 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 3)
+2020-12-17 16:13:43,852 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.67511 secs)
+2020-12-17 16:13:43,854 [DEBUG]  Current task with data (10000000, 1) scope [9] and condition []
+2020-12-17 16:13:43,854 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 2)
+2020-12-17 16:13:44,512 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.65649 secs)
+2020-12-17 16:13:44,512 [DEBUG]  Current task with data (10000000, 3) scope [2, 3, 4] and condition []
+2020-12-17 16:13:47,459 [DEBUG]  calculating pairwise RDC on sample 100000 takes 2.736531972885132 secs
+2020-12-17 16:13:47,460 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 3) (remaining tasks 1)
+2020-12-17 16:13:47,703 [DEBUG]  		found 2 col clusters (in 0.24188 secs)
+2020-12-17 16:13:47,712 [DEBUG]  Create an independent component with scope [2, 3] and condition []
+2020-12-17 16:13:47,713 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-12-17 16:13:47,734 [DEBUG]  Current task with data (10000000, 7) scope [0, 1, 5, 6] and condition [2, 3, 4]
+2020-12-17 16:13:54,706 [DEBUG]  calculating pairwise RDC on sample 100000 takes 6.4912378787994385 secs
+2020-12-17 16:13:54,708 [DEBUG]  OP: Operation.REMOVE_CONDITION on slice (10000000, 7) (remaining tasks 2)
+2020-12-17 16:13:54,709 [DEBUG]  Removed uniformative condition [3]
+2020-12-17 16:13:55,095 [DEBUG]  Current task with data (10000000, 2) scope [2, 3] and condition []
+2020-12-17 16:13:56,645 [DEBUG]  calculating pairwise RDC on sample 100000 takes 1.4122920036315918 secs
+2020-12-17 16:13:56,647 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10000000, 2) (remaining tasks 2)

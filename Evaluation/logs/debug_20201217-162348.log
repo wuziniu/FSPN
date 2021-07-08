@@ -1,0 +1,42 @@
+2020-12-17 16:24:19,771 [INFO ]  NumExpr defaulting to 8 threads.
+2020-12-17 16:24:29,096 [DEBUG]  Current task with data (10000000, 10) scope [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and condition []
+2020-12-17 16:24:38,225 [DEBUG]  calculating pairwise RDC on sample 100000 takes 8.557722806930542 secs
+2020-12-17 16:24:38,228 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 10) (remaining tasks 0)
+2020-12-17 16:24:38,740 [DEBUG]  		found 4 col clusters (in 0.50986 secs)
+2020-12-17 16:24:38,741 [DEBUG]  Create an independent component with scope [0, 1, 2, 3, 4, 5, 6] and condition []
+2020-12-17 16:24:38,741 [DEBUG]  Create an independent component with scope [7] and condition []
+2020-12-17 16:24:38,742 [DEBUG]  Create an independent component with scope [8] and condition []
+2020-12-17 16:24:38,742 [DEBUG]  Create an independent component with scope [9] and condition []
+2020-12-17 16:24:38,743 [DEBUG]  Current task with data (10000000, 7) scope [0, 1, 2, 3, 4, 5, 6] and condition []
+2020-12-17 16:24:46,052 [DEBUG]  calculating pairwise RDC on sample 100000 takes 6.837006092071533 secs
+2020-12-17 16:24:46,053 [DEBUG]  OP: Operation.FACTORIZE on slice (10000000, 7) (remaining tasks 3)
+2020-12-17 16:24:46,054 [DEBUG]  Factorize node found the strong connected component[0, 1, 5, 6]
+2020-12-17 16:24:46,055 [DEBUG]  We only factor out [0, 1, 5, 6]
+2020-12-17 16:24:46,454 [DEBUG]  Factorize node factor out weak connected component[2, 3, 4]
+2020-12-17 16:24:46,610 [DEBUG]  Factorize node found a strongly connect component[0, 1, 5, 6], condition on [2, 3, 4]
+2020-12-17 16:24:47,152 [DEBUG]  Current task with data (10000000, 1) scope [7] and condition []
+2020-12-17 16:24:47,153 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 4)
+2020-12-17 16:24:48,127 [DEBUG]  		 created leaf Histogram for scope=[7] and condition=[] (in 0.97367 secs)
+2020-12-17 16:24:48,128 [DEBUG]  Current task with data (10000000, 1) scope [8] and condition []
+2020-12-17 16:24:48,128 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 3)
+2020-12-17 16:24:48,859 [DEBUG]  		 created leaf Histogram for scope=[8] and condition=[] (in 0.72998 secs)
+2020-12-17 16:24:48,860 [DEBUG]  Current task with data (10000000, 1) scope [9] and condition []
+2020-12-17 16:24:48,860 [DEBUG]  OP: Operation.CREATE_LEAF on slice (10000000, 1) (remaining tasks 2)
+2020-12-17 16:24:49,705 [DEBUG]  		 created leaf Histogram for scope=[9] and condition=[] (in 0.84380 secs)
+2020-12-17 16:24:49,706 [DEBUG]  Current task with data (10000000, 3) scope [2, 3, 4] and condition []
+2020-12-17 16:24:53,103 [DEBUG]  calculating pairwise RDC on sample 100000 takes 3.1662049293518066 secs
+2020-12-17 16:24:53,105 [DEBUG]  OP: Operation.SPLIT_COLUMNS on slice (10000000, 3) (remaining tasks 1)
+2020-12-17 16:24:53,357 [DEBUG]  		found 2 col clusters (in 0.25046 secs)
+2020-12-17 16:24:53,365 [DEBUG]  Create an independent component with scope [2, 3] and condition []
+2020-12-17 16:24:53,366 [DEBUG]  Create an independent component with scope [4] and condition []
+2020-12-17 16:24:53,385 [DEBUG]  Current task with data (10000000, 7) scope [0, 1, 5, 6] and condition [2, 3, 4]
+2020-12-17 16:25:00,720 [DEBUG]  calculating pairwise RDC on sample 100000 takes 6.811996936798096 secs
+2020-12-17 16:25:00,721 [DEBUG]  OP: Operation.SPLIT_ROWS_CONDITION on slice (10000000, 7) (remaining tasks 2)
+2020-12-17 16:25:00,722 [DEBUG]  fanout_location [], condition_location [2, 3, 4], query_attr [2, 3, 4]
+2020-12-17 16:25:00,722 [INFO ]  find optimal attribute: 3
+2020-12-17 16:25:01,997 [INFO ]  find optimal clusters: [{3: [(0.0, 6.0)]}, {3: [(7.0, 62.0)]}]
+2020-12-17 16:25:03,092 [DEBUG]  		found 2 row clusters (in 2.37096 secs)
+2020-12-17 16:25:03,132 [DEBUG]  Current task with data (10000000, 2) scope [2, 3] and condition []
+2020-12-17 16:25:04,792 [DEBUG]  calculating pairwise RDC on sample 100000 takes 1.511064052581787 secs
+2020-12-17 16:25:04,793 [DEBUG]  OP: Operation.SPLIT_ROWS on slice (10000000, 2) (remaining tasks 3)
+2020-12-17 16:25:06,940 [DEBUG]  		found 2 row clusters (in 2.14621 secs)
