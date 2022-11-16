@@ -2,7 +2,7 @@
 
 ## Code structure
 The overall structure was inspired and adapted from https://github.com/SPFlow/SPFlow. 
-I directly reused some files and functions of this project as well.
+I directly reused some files and functions of this project as well. I thank the SPFlow authors for their excellent code.
 
 This fspn folder contains six sub-folders namely: Algorithm, Data_prepare, Evaluation, Inference, Learning and Structures.
 Learning contains the key file: structureLearning.py, which learns the FSPN from scratch using the data.
